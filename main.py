@@ -21,6 +21,9 @@ import pickle
 from flask import Flask, request
 from google.cloud import storage
 
+from tensorflow import keras
+import tensorflow_hub as hub
+
 MODEL_BUCKET = os.environ['MODEL_BUCKET']
 MODEL_FILENAME = os.environ['MODEL_FILENAME']
 MODEL = None
